@@ -98,6 +98,8 @@ export default function AgendamentoPage() {
       vagasDisponiveis: data.totalVagas
     };
 
+    console.log("payload" , payload)
+
     const existsingSchedules = await fetch(`/api/citizens-service-schedule?data=${payload.data}`, {
       method: 'GET',
     });

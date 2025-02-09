@@ -4,7 +4,8 @@ export default function Home() {
   const features = [
     { title: "Cadastro Único", link: "/cadastroUnico", description: "Realize cadastro de agendamentos para serviços de cadastro único." },
     { title: "Casa do Cidadão", link: "/casaDoCidadao", description: "Realize cadastro de agendamentos para serviços de 1º via RG, 2º via RG e reservista." },
-    { title: "Outros Serviços", link: "/outrosServicos", description: "Acesse diversos serviços públicos em um só lugar." }
+    // { title: "Outros Serviços", link: "/outrosServicos", description: "Acesse diversos serviços públicos em um só lugar." }
+    { title: "Dashboard",  link: "/dashboard", description: "Acesso as entrevistas" }
   ];
 
   return (

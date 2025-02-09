@@ -62,12 +62,25 @@ export default function Layout({
   return (
     <html lang="pt-BR">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
-        
+
         <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-          <div className="container mx-auto flex items-center justify-between p-4">
+        <div className="container mx-auto flex items-center justify-between p-4">
             <h1 className="text-xl font-bold">
               <Link href="/">CajuSoft</Link>
             </h1>
+            <nav className="flex items-center">
+              <ul className="hidden md:flex space-x-4">
+                <li>
+                  <Link href="/dashboard" className="hover:text-gray-600">Dashboard</Link>
+                </li>
+              </ul>
+              {/* Menu mobile */}
+              <button className="md:hidden p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </nav>
           </div>
         </header>
 

@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { connectDB } from '@/lib/mongodb';
 import CitizenServiceSchedule from '@/models/CitizenServiceSchedule';
+import { connectDB } from '@/lib/dbConnect';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   await connectDB();
